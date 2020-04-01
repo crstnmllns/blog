@@ -1,0 +1,16 @@
+<table class="table">
+<tr>
+<th>Title</th>
+<th>Imagen</th>
+<th>Contenido</th>
+<th>Fecha de Ingreso</th>
+</tr>
+<% @post.each do |post| %>
+<tr>
+<td><%= post.title %> </td>
+<td><%=  post.image_url %> </td>
+<td><%=  post.content %> </td>
+<td><%=  post.created_at %> </td>
+</tr>
+<% end %>
+</table>
